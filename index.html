@@ -97,12 +97,11 @@
 
 		body{
 			font-family: Minion Pro Regular;
-  		font-size: 20px;
+  		font-size: 18px;
   		line-height: 1.8;
   		padding-top: 10px;
   		padding-bottom: 10px;
-  		background-color:#D2D2D3;
-  		padding: 30px;
+			background-color:#D2D2D3;
   		color: #333;
 		}
 
@@ -119,13 +118,17 @@ a{
 		}
 
 		#content{
-			padding:10px 10px 10px 10px;
+			padding:40px 0px 40px 40px;
 		}
 
 		#nav{
-			width:180px;
+			width:150px;
+			background-color:FAFAF1;
+			margin-top:100px;
+			padding:20px;
 			float:left;
 		}
+
 		img {
 		  float: left;
 		}
@@ -145,10 +148,20 @@ a{
 			padding:0;
 		}
 
+		p{
+			padding-left: 40px;
+			margin-right:50px;
+			margin-left:15px;
+		  line-height:2em;
+		}
+
+
 h1{
-	color:333;
+  color: 333;
+	background-color:FAFCF1;
+
 	font-family:Minion Pro Regular;
-	font-size: 44px;
+	font-size: 36	px;
 	font-weight: normal;
 	padding-left: 5px;
 	margin:0;
@@ -156,9 +169,11 @@ h1{
 }
 
 		h2,h3{
+			background-color:FAFAF1;
+
 			color:333;
 			font-family:Minion Pro Regular;
-			font-size: 34px;
+			font-size: 24px;
 			font-weight: normal;
 			margin:0;
 			line-height:1.3em;
@@ -168,7 +183,7 @@ h1{
 
 		#footer{
 			clear:both;
-			background-color:grey;
+			background-color:ADADAD;
 			text-align: right;
 			padding:10px;
 			color:white;
@@ -176,14 +191,20 @@ h1{
 		}
 
 		ul {
+			padding-left: 60px;
+			margin-right:50px;
+			margin-left:15px;
+		  line-height:2em;
   list-style-type: none;
-  padding: 0;
-  border: 1px solid #ddd;
 }
+
+
 
 ul li {
   padding: 8px 16px;
-  border-bottom: 1px solid #ddd;
+	list-style-type: square;
+
+
 }
 
 ul li:last-child {
@@ -191,9 +212,11 @@ ul li:last-child {
 }
 
 
-		</style>
-	</head>
-	<body>
+
+</style>
+</head>
+
+<body>
 		<div id="container">
 			<div id="header">
 
@@ -201,28 +224,30 @@ ul li:last-child {
 			<div id="content">
 
 				<div id="nav">
-					<ul>
-						<li><a class="selected" href="#activities">Activities</a></li>
-						<li><a class="selected" href="#publications">Publications</a></li>
-						<li><a class="selected" href="#teaching">Teaching</a></li>
-					</ul>
+
+						<a class="selected" href="#publications">Publications</a>
+						<a class="selected" href="#teaching">Teaching</a>
+
 				</div>
 
 				<div id="main">
 
 
 
-<img src="./pictures/profile.png" style="height:300px;margin-right:15px;">
 <h1 style="padding-top: 10px;">Amaldev Manuel</h1>
-					Assistant Professor, CSE<br>
+<p>Hello!, I am an assistant professor in Computer Science and Engineering at the <a href="https://www.iitgoa.ac.in/people.php?type=faculty&year=&dept=MACS">School of Mathematics</a> (SMCS) at the <a href="https>//www.iitgoa.ac.in"> Indian Institute of Technology (IIT) Goa</a>. I am interested in the mathematical foundations of Computer Science, especially the study of automata and logic and their associated algebras. In particular I am interested in formal languages and finite semigroups, decidability of logics and automata etc.
+</p>
+
+<h2 id="address">Address</h2>
+
+<p>
+					Assistant Professor<br>
 					School of Mathematics and Computer Science<br>
 					Indian Institute of Technology Goa<br>
 					GEC Campus, Farmagudi, Ponda, Goa 403401<br>
-					amal@iitgoa.ac.in
-<br>
-<br>
-<p>Hello!, I am an assistant professor in Computer Science and Engineering at the <a href="https://www.iitgoa.ac.in/people.php?type=faculty&year=&dept=MACS">School of Mathematics</a> (SMCS) at the <a href="https>//www.iitgoa.ac.in"> Indian Institute of Technology (IIT) Goa</a>. I am interested in the mathematical foundations of Computer Science, especially the study of automata and logic and their associated algebras. In particular I am interested in formal languages and finite semigroups, decidability of logics and automata etc.
+					<em>amal@iitgoa.ac.in</em>
 </p>
+
 
 <h2 id="activities">Activities</h2>
 <p>Organizing Committee Chair, FSTTCS 2020<br>
@@ -230,7 +255,6 @@ PC Member, DLT 2019<br>
 PC Co-Chair, ICLA 2019</p>
 
 <h2 id="publications">Publications</h2>
-
 <ul>
 <li>	<em> Logics for Reversible Regular Languages and Semigroups with Involution</em>, with  Paul Gastin and Govind R., Developments in Language Theory (DLT) 2019 <a href="./papers/dlt19.pdf">PDF</a></li>
 
@@ -288,13 +312,15 @@ with Md.&nbsp;Aquil Khan</li>
 
  <h2 id="teaching">Teaching</h2>
 <p>
-CS101 Introduction to Computing through Python, Monsoon 2019<br>
-CS113 Data Structures and Algorithms, Summer 2018<br>
-CS251 Software Systems Lab, Monsoon 2018<br>
-CS207 Discrete Mathematical Structures, Monsoon 2017<br>
-CS310 Automata Theory, Summer 2017<br>
-CS113 Data Structures and Algorithms, Summer 2017<br>
-CS215 Data Analysis and Interpretation, Monsoon 2017<br>
+CS101 Programming Language Paradigms, Aug-Dec 2020<br>
+CS101 Foundations of Functional Programming via Haskell, Jan-April 2020<br>
+CS101 Introduction to Computing through Python, Aug-Dec 2019<br>
+CS113 Data Structures and Algorithms, Jan-April 2018<br>
+CS251 Software Systems Lab, Aug-Dec 2018<br>
+CS207 Discrete Mathematical Structures, Aug-Dec 2017<br>
+CS310 Automata Theory, Jan-April 2017<br>
+CS113 Data Structures and Algorithms, Jan-April 2017<br>
+CS215 Data Analysis and Interpretation, Aug-Dec 2017<br>
 Algebraic Automata Theory, Jan-April 2017, Chennai Mathematical Institute
 </p>
 <br>
@@ -302,7 +328,7 @@ Algebraic Automata Theory, Jan-April 2017, Chennai Mathematical Institute
 </div>
 </div>
 <div id="footer">
-<p><em>Page last updated: 21 Sep 2019</em></p>
+<p><em>Page last updated: 14 Dec 2020</em></p>
 </div>
 </div>
 
